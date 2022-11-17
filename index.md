@@ -2,122 +2,151 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+  <body>
+    <!-- menu section-->
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#social">Social</a>
+        </li>
+      </ul>
+    </nav>
 
-[Link to another page](./another-page.html).
+    <!-- welcome section-->
+    <section id="welcome-section" class="welcome-section">
+      <h1>Hey that's me Adrian</h1>
+      <p>A Full Stack Developer</p>
+    </section>
 
-There should be whitespace between paragraphs.
+    <!-- projects section-->
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">These are some of my projects</h2>
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+      <div class="projects-grid">
+        <a
+          href="https://github.com/eLyiN/HackforGood_Malaga"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://i.postimg.cc/wjd833g9/Screenshot-9.png"
+            alt="project"
+          />
+          
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Hack4Good | IdentiThor
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://github.com/eLyiN/42_Malaga/tree/master/42_Malaga_Finished_Projects/libft"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://www.asidesigned.com/images/programming-projects-img/project-libft.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Libft
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://github.com/eLyiN/42_Malaga/tree/master/42_Malaga_Finished_Projects/get_next_line"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://www.asidesigned.com/images/programming-projects-img/project-getnextline.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Get Next Line
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://github.com/eLyiN/so_long"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://i.postimg.cc/Z5QcnVWG/Screenshot-10.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            so_long Videgame
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+    </section>
 
-# Header 1
+    <!-- contact section-->
+    <section id="social" class="social-section">
+      <div class="social-section-header">
+        <h2>My social media</h2>
+      </div>
+      <div class="social-links">
+        <a
+          id="profile-link"
+          href="https://github.com/eLyiN"
+          target="_blank"
+          class="btn social-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        <a
+          href="https://twitter.com/Shelakh92"
+          target="_blank"
+          class="btn social-details"
+          ><i class="fab fa-twitter"></i> Twitter</a
+        >
+        <a href="tel:666888999" class="btn social-details"
+          ><i class="fas fa-mobile-alt"></i> Call me</a
+        >
+      </div>
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+      <!-- footer section-->
+    </section>
+    <footer>
+      <p>
+        &copy; Created for
+        eLyiN </i
+        >
+      </p>
+    </footer>
+  </body>
+</html>
